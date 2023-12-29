@@ -1,0 +1,29 @@
+{
+  "name": "lab1",
+  "version": "1.0.0",
+  "description": "Lab work #1",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "format": "prettier --check .",
+    "format:fix": "prettier --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Illya-01/node-lab1.git"
+  },
+  "author": "Illia Roman, student of IO-12 group",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Illya-01/node-lab1/issues"
+  },
+  "homepage": "https://github.com/Illya-01/node-lab1#readme",
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "eslint-plugin-sonarjs": "^0.23.0",
+    "prettier": "3.1.1"
+  }
+}
