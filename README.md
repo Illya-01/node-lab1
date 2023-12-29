@@ -29,6 +29,9 @@ Create project in GitHub with minimal code-quality checks and autodepoly.
 - Difference with VPS/FaaS?
 - Why we need peerDeps?
 - `npm i` vs `npm ci`
+  <<<<<<< HEAD
+  =======
+- > > > > > > > e4ff0af59cf2a81fcbed1407d80d30a67a9e42b2
 
 ## Links
 
