@@ -29,9 +29,6 @@ Create project in GitHub with minimal code-quality checks and autodepoly.
 - Difference with VPS/FaaS?
 - Why we need peerDeps?
 - `npm i` vs `npm ci`
-  <<<<<<< HEAD
-  =======
-- > > > > > > > e4ff0af59cf2a81fcbed1407d80d30a67a9e42b2
 
 ## Links
 
@@ -57,13 +54,7 @@ Create project in GitHub with minimal code-quality checks and autodepoly.
     - https://cloud.google.com/run
     - https://app.layer0.co/
     - exotic: https://denoflare.dev/
-  - VPS
-    - https://www.digitalocean.com/
-    - https://render.com/
-    - https://fly.io/
-    - https://www.oracle.com/cloud/free/
-    - AWS (free tier should be Ok)
-    - Azure (free tier should be Ok)
-    - Google Cloud ([free tier](https://cloud.google.com/free-trial/))
+  - VPS - https://www.digitalocean.com/ - https://render.com/ - https://fly.io/ - https://www.oracle.com/cloud/free/ - AWS (free tier should be Ok) - Azure (free tier should be Ok) - Google Cloud ([free tier](http
+    s://cloud.google.com/free-trial/))
   - Do not use:
     - Heroku
