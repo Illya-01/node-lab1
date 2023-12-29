@@ -6,7 +6,7 @@
 
 ## Task
 
-Create project in GitHub with minimal code-quality checks and autodepoly.
+Create project in GitHub with minimal code-quality checks and auto deploy.
 
 ### Requirements
 
@@ -17,44 +17,26 @@ Create project in GitHub with minimal code-quality checks and autodepoly.
 - add Prettier ✅
 - Add check on pre-commit hooks ✅
 - Add GitHub action to run checks\tests on commit or PR ✅
-- Add AutoDeployment to any hosting provider
+- Add AutoDeployment to any hosting provider ([I used Vercel](https://node-lab1-roan.vercel.app/)) ✅
 - Add Editorconfig ✅
-- Bonus: the same with TypeScript
-- Bonus: SonarCloud, https://github.com/SonarSource/sonarcloud-github-action
+- Bonus: the same with TypeScript [I don't use TS]
+- Bonus: SonarCloud, https://github.com/SonarSource/sonarcloud-github-action [I don't use TS]
 
 ## Questions
 
-- dev Deps vs Deps
-- Why we have separate tooling for formatting/linting
+- dev Deps vs Deps:
+  - dependencies are the packages that everyone runs or when a project is deployed, like Express.
+  - devDependencies are packages that are only needed during development, like nodemon, ESlint, Prettier, Jest etc.
+- Why we have separate tooling for formatting/linting:
+  - Formatting is used to make the code look consistent and more readable.
+  - Linting is used to analyze code for potential errors, bugs, and code quality issues.
 - Difference with VPS/FaaS?
+  - VPS is a virtual private server that can used to host an application. We have to configure everything by ourselves.
+  - FaaS is a serverless architecture. We don't have to configure anything, just write code and deploy it.
+    It's cheaper and easier to use.
 - Why we need peerDeps?
+  - Peer dependencies are a special type of dependency that would only ever come up if we are to publish our own package/module/library.
+    They are dependencies that our module needs in order to work, but which will be installed by whoever is using our module.
 - `npm i` vs `npm ci`
-
-## Links
-
-- https://gist.github.com/kjellskogsrud/d824c38f76e38010156d0bc80dbd3c62
-- https://docs.npmjs.com/specifying-dependencies-and-devdependencies-in-a-package-json-file
-- https://eslint.org/
-- https://github.com/SonarSource/eslint-plugin-sonarjs
-- https://prettier.io/
-- https://editorconfig.org/
-- https://prettier.io/docs/en/configuration.html#editorconfig
-- https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks
-- https://prettier.io/docs/en/precommit.html
-- https://www.npmjs.com/package/husky
-- https://github.com/features/actions
-- https://github.com/actions/setup-node
-- cache node_modules [standard](https://github.com/actions/setup-node#caching-global-packages-data) and [fast](https://www.voorhoede.nl/en/blog/super-fast-npm-install-on-github-actions/) also described [here](https://docs.github.com/en/actions/using-workflows/caching-dependencies-to-speed-up-workflows)
-- https://github.com/actions/cache/blob/main/examples.md#node---npm
-- Deployment options:
-  - Lambda
-    - https://pages.cloudflare.com/
-    - https://vercel.com/
-    - https://firebase.google.com/
-    - https://cloud.google.com/run
-    - https://app.layer0.co/
-    - exotic: https://denoflare.dev/
-  - VPS - https://www.digitalocean.com/ - https://render.com/ - https://fly.io/ - https://www.oracle.com/cloud/free/ - AWS (free tier should be Ok) - Azure (free tier should be Ok) - Google Cloud ([free tier](http
-    s://cloud.google.com/free-trial/))
-  - Do not use:
-    - Heroku
+  - `npm i` installs all dependencies and devDependencies, modifying package.json, package-lock.json, and node_modules folder.
+  - `npm ci` ("clean install") deletes the node_modules folder and installs exactly what's in the package-lock.json for consistency.
